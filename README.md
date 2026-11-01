@@ -1,12 +1,12 @@
-# AmigaChrome releases
+# AmiCradle releases
 
-Signed AmigaChrome patches for machines outside the Team: the `.deb` install,
-Raspberry Pi cards and anyone else running AmigaChrome. There is no source
-code here; the code lives in AmigaChrome's own repository.
+Signed AmiCradle patches for machines outside the Team: the `.deb` install,
+Raspberry Pi cards and anyone else running AmiCradle. There is no source
+code here; the code lives in AmiCradle's own repository.
 
-The design is `docs/design/Design-Signed-Patch-Releases.md` in AmigaChrome's
+The design is `docs/design/Design-Signed-Patch-Releases.md` in AmiCradle's
 repository. **Nothing is published yet.** The channels stay empty until
-AmigaChrome's patch runner checks signatures.
+AmiCradle's patch runner checks signatures.
 
 ## Channels
 
@@ -46,15 +46,15 @@ own `.sig`, under a tag `<channel>-<build id>`.
 ## Checking a patch yourself
 
 Patches are signed with OpenSSH signatures (`ssh-keygen -Y`) in the
-namespace `amigachrome-patch`. The Team's public keys are in AmigaChrome's
+namespace `amicradle-patch`. The Team's public keys are in AmiCradle's
 `config/patch-signers`. To check one by hand:
 
 ```sh
-ssh-keygen -Y verify -f patch-signers -I release@amigachrome \
-  -n amigachrome-patch -s acpatch-NAME.zip.sig < acpatch-NAME.zip
+ssh-keygen -Y verify -f patch-signers -I release@amicradle \
+  -n amicradle-patch -s acpatch-NAME.zip.sig < acpatch-NAME.zip
 ```
 
-AmigaChrome checks every patch this way before it runs anything. A patch that
+AmiCradle checks every patch this way before it runs anything. A patch that
 doesn't verify is refused.
 
 ## Licence
