@@ -29,8 +29,8 @@ are current for it:
       "name": "acpatch-<title>-<YYYYMMDDTHHMMSSZ>.zip",
       "sha256": "<64 hex>",
       "size": 123456,
-      "url": "https://github.com/DalsinAI/amigachrome-releases/releases/download/<tag>/<name>",
-      "sig": "https://github.com/DalsinAI/amigachrome-releases/releases/download/<tag>/<name>.sig",
+      "url": "https://github.com/DalsinAI/amicradle-releases/releases/download/<tag>/<name>",
+      "sig": "https://github.com/DalsinAI/amicradle-releases/releases/download/<tag>/<name>.sig",
       "minVersion": "0.30.0",
       "maxVersion": null,
       "targets": null
